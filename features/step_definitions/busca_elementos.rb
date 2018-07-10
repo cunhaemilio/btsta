@@ -69,9 +69,9 @@ Dado("acessei a pagina de links") do
   Quando("clico no mail box") do
     #colocar ponto entre o espaco da classe  find('.btn dropdown-button').click
     find('.btn.dropdown-button').click
-    sleep 1
+    sleep 2
     find('a[onclick="ativaedesativadrop2()"]').click
-    sleep 1
+    
   end
 
   Quando("seleciono os campos") do
