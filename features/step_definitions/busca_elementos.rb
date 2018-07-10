@@ -80,15 +80,6 @@ Dado("acessei a pagina de links") do
     find(:xpath, "/html/body/div[2]/div[2]/div/div[5]/div[1]/div/input").send_keys(:enter)
     sleep 1
    
-    find(:xpath, "/html/body/div[2]/div[2]/div/div[5]/div[2]/div/input").click
-    find(:xpath, "/html/body/div[2]/div[2]/div/div[5]/div[2]/div/input").send_keys(:down)
-    find(:xpath, "/html/body/div[2]/div[2]/div/div[5]/div[2]/div/input").send_keys(:enter)
-    sleep 1
-    
-    find(:xpath, "/html/body/div[2]/div[2]/div/div[5]/div[3]/div/input").click
-    find(:xpath, "/html/body/div[2]/div[2]/div/div[5]/div[3]/div/input").send_keys(:down)
-    find(:xpath, "/html/body/div[2]/div[2]/div/div[5]/div[3]/div/input").send_keys(:enter)
-    sleep 1
 
   end
   
