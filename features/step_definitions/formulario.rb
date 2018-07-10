@@ -24,5 +24,5 @@ Dado("acessei a pagina de criacao de usuarios") do
   end
   
   Entao("o sistema apresenta os dados") do
-    expect(page).to have_content "jsilva@gmail.com"
+    expect(page).to have_content "cunhaemilio@gmail.com"
   end
