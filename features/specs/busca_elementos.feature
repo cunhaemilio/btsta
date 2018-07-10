@@ -65,5 +65,5 @@ Entao o sistema apresenta a mensagem "Você Clicou no Dropdown Unread!"
 Cenario: Select
 Dado acessei a pagina de dropdown e select
 Quando seleciono os campos
-Entao o sistema apresenta a mensagem "Vensagens de Sucesso!"
+Entao o sistema apresenta a mensagem "Mensagens de Sucesso!"
 
