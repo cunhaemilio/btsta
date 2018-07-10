@@ -1,7 +1,7 @@
 #language: pt
 
 @buscaelementos
-Funcionalidade: Formulario
+Funcionalidade: Busca de Elementos
 SENDO um estudante de automacao
 EU QUERO acessar a pagina de busca de elementos
 PARA que eu possa interagir com os elementos
