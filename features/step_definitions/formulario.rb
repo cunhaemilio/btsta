@@ -78,17 +78,17 @@ E ("Eu adiciono uma pessoa vinculada") do
   find('#adicionarRelacao').click
   sleep 1
 
-  find('#anexar').click
-  sleep 2
-  find('option[label="Procuração"').click
-  find('input[ng-model="vm.dto.validadeProcuracao"]').click
+  #find('#anexar').click
+  #sleep 2
+  #find('option[label="Procuração"').click
+  #find('input[ng-model="vm.dto.validadeProcuracao"]').click
   
   # Hugo.. Criar uma pasta dentro de suport com o nome documents e colocar lá dentro um PDF qualquer com o nome Md_Proc
   # O caminho abaixo aponta para essa pasta e esse aquivo
-  find('#upload > input[type="file"]', visible: false).set Dir.pwd + '/features/support/documents/Md_Proc.pdf'
+  #find('#upload > input[type="file"]', visible: false).set Dir.pwd + '/features/support/documents/Md_Proc.pdf'
 
-  find('#salvarAnexo').click
-  find('button[ng-click="vm.fechar()"]').click
+  #find('#salvarAnexo').click
+  #find('button[ng-click="vm.fechar()"]').click
   find('#adicionarRelacao').click
 
 end
