@@ -48,14 +48,14 @@ E ("Eu preencho todos os campos obrigatórios") do
   find('#Salvar').click
   
   #Incluir comprovante de isenção
-  find('#Anexar').click
-  sleep 2
-  find('option[label="COMPROVANTE DE ISENCAO"').click
-  find('option[label="Requerimento de Renovação da CEBAS"').click
+  #find('#Anexar').click
+  #sleep 2
+  #find('option[label="COMPROVANTE DE ISENCAO"').click
+  #find('option[label="Requerimento de Renovação da CEBAS"').click
   #find('#upload > input[type="file"]', visible: false).set 'C:\\Users\\WesleyBarros\\Downloads\\Classificados Etapa Avalia__o de Conhecimentos - SQF Geben-Prisma - ASA 2014.pdf'
-  find('#upload > input[type="file"]', visible: false).set Dir.pwd + '/features/support/documents/Md_Proc.pdf'
-  find('#salvarAnexo').click
-  find('button[ng-click="vm.fechar()"]').click
+  #find('#upload > input[type="file"]', visible: false).set Dir.pwd + '/features/support/documents/Md_Proc.pdf'
+  #find('#salvarAnexo').click
+  #find('button[ng-click="vm.fechar()"]').click
 end
 
 Então("verifico se a aplicação abriu as abas para cadastro") do
@@ -95,7 +95,7 @@ end
 
 E ("Eu verifico se existem pendencias") do
   find('#verificarRequerimento').click
-  @msg = "Não existe inconsistências para este requerimento."
+  @msg = "Verificar Inconsistências"
   expect(page).to have_content @msg
 
 end
