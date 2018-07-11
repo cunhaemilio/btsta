@@ -103,7 +103,7 @@ Entao("finalizo o fluxo de cadastro") do
   sleep 4
 #  expect(page).to have_content ('Não existe inconsistências para este requerimento')
   find('#subItemEmissaoCrc').click
-  find('input[name="cpfCnpj"]').set '57014854000144'
+  find('input[name="cpfCnpj"]').set '43202472000130'
   find('#pesquisar').click
   find('a[ng-click="vm.excluir(item)"]').click # Excluindo a solicitação
   find('#ok').click #modal de Confirmação
