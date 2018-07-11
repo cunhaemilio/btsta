@@ -3,11 +3,16 @@ require "rspec"
 require "selenium-webdriver"
 
 
+Capybara.register_driver :insecure_selenium do |app|
+  Capybara::Selenium::Driver.new(
+    app,
+    browser: :firefox,
+    desired_capabilities: { accept_insecure_certs: true }
+  )
+end
 
 Capybara.configure do |config|
-    config.default_driver = :selenium
-    config.app_host = 'https://automacaocombatista.herokuapp.com/'
-    config.default_max_wait_time = 15
-    
-    desired_capabilities: { accept_insecure_certs: true }
+  config.run_server = false
+  config.default_driver = :insecure_selenium
 end
+
