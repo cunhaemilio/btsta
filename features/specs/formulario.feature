@@ -1,20 +1,22 @@
-#language: pt
+# language: pt
+@EmissaoCRC
 
-@formulario
-Funcionalidade: Formulario
-SENDO um estudante de automacao
-EU QUERO acessar a pagina de formulario
-PARA que eu possa criar e listar usuarios
+Funcionalidade: Emitir Requerimento CRC
 
+Contexto: Atendimento Externo
 
-@criarformulario
-Cenario: Criar Usuarios
-Dado acessei a pagina de criacao de usuarios
-Quando informo os campos e salvo
-Entao o sistema apresenta a mensagem "Usuário Criado com sucesso"
+Cenario: Acionar no menu lateral a opção Requerimento  Emissão  CRC  Novo Requerimento Cadastral  Selecionar um requerente.
 
-@listarformulario
-Cenario: Listar Usuarios
-Dado acessei a pagina de listagem de usuarios
-Quando Verifico a pagina
-Entao o sistema apresenta os dados
+ Dado Que eu esteja logado na aplicação. Será apresentada a tela com o formulário da aba Início.
+ Então Eu verifico se login foi efetuado com sucesso
+ 
+ E Eu acesso o cenário de emissão de requerimento CRC
+ Então verifico se o cenário foi aberto corretamente
+
+ Quando eu informo o cnpj a aplicação apresenta os campos para preechimento
+ E Eu preencho todos os campos obrigatórios
+ Então verifico se a aplicação abriu as abas para cadastro
+ 
+ Quando Eu adiciono uma pessoa vinculada
+ E Eu verifico se existem pendencias
+ Então finalizo o fluxo de cadastro
