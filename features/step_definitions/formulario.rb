@@ -32,7 +32,7 @@ Dado("Eu acesso o cenário de emissão de requerimento CRC") do
 
 Quando("eu informo o cnpj a aplicação apresenta os campos para preechimento") do
   sleep 2
-  find('input[name="cnpj"]').set '84683879000103'
+  find('input[name="cnpj"]').set '43202472000130'
   sleep 2
   find(:xpath, "//html/body/div[1]/main/article/section[2]/div/div/div[2]/div/div/div/ng-transclude/div/fieldset[1]/div[4]/fieldset[1]/div[1]/div[1]/div/div/div/label/div[1]/label[3]").click
   end
